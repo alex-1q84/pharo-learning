@@ -47,3 +47,12 @@ CounterTest >> testIncrement [
 	c count: 0; increament; increament.
 	self assert: c count equals: 2
 ]
+
+{ #category : #tests }
+CounterTest >> testInitialize [ 
+	"scope: instance-variables"
+
+	| c |
+	c := Counter new.
+	self assert: c count equals: 0.
+]

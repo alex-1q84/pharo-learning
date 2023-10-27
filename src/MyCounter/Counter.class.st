@@ -46,3 +46,11 @@ Counter >> increament [
 
 	count := count + 1.
 ]
+
+{ #category : #initialization }
+Counter >> initialize [ 
+	"comment stating purpose of instance-side method"
+	"scope: class-variables  &  instance-variables"
+
+	count := 0
+]
