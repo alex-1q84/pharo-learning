@@ -30,3 +30,19 @@ Counter >> count: c [
 
 	count := c
 ]
+
+{ #category : #'accumulator ops' }
+Counter >> decreament [
+	"comment stating purpose of instance-side method"
+	"scope: instance-variables"
+
+	count := count - 1
+]
+
+{ #category : #'accumulator ops' }
+Counter >> increament [
+	"increament"
+	"scope: instance-variables"
+
+	count := count + 1.
+]
