@@ -22,3 +22,11 @@ Counter >> count [
 
 	^ count
 ]
+
+{ #category : #accessing }
+Counter >> count: c [
+	"setup count value"
+	"scope: instance-variables"
+
+	count := c
+]
