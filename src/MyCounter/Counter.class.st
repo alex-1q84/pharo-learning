@@ -16,6 +16,14 @@ Class {
 }
 
 { #category : #accessing }
+Counter class >> startingAt: anInteger [
+	"comment stating purpose of class-side method"
+	"scope: class-variables  &  class-instance-variables"
+
+	^ self new count: anInteger .
+]
+
+{ #category : #accessing }
 Counter >> count [
 	"count value"
 	"scope: instance-variables"
