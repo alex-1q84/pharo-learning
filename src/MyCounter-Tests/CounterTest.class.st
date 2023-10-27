@@ -27,6 +27,17 @@ CounterTest >> testDecreament [
 ]
 
 { #category : #tests }
+CounterTest >> testIncreament [
+	"comment stating purpose of instance-side method"
+	"scope: class-variables  &  instance-variables"
+
+	| c |
+	c := Counter new.
+	c count: 0; increament; increament.
+	self assert: c count equals: 2
+]
+
+{ #category : #tests }
 CounterTest >> testIncrement [
 	"comment stating purpose of instance-side method"
 	"scope: class-variables  &  instance-variables"
