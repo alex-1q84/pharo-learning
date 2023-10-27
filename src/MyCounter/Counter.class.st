@@ -62,3 +62,15 @@ Counter >> initialize [
 
 	count := 0
 ]
+
+{ #category : #printing }
+Counter >> printOn: aStream [
+	"comment stating purpose of instance-side method"
+
+	"scope: class-variables  &  instance-variables"
+
+	super printOn: aStream.
+	aStream
+		nextPutAll: ' with value: ';
+		print: count 
+]
